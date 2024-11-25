@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #60a5fa, #3b82f6);
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.weather-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+}
+
+.current-weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.temperature {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+.condition {
+    text-align: right;
+}
+
+.icon {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.description {
+    color: white;
+    font-size: 18px;
+}
+
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.detail {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.detail i {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.label {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.value {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day {
+    text-align: center;
+}
+
+.name {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.day .icon {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.temp {
+    color: white;
+    font-size: 14px;
+}
+
+.loading {
+    width: auto;
+    text-align: center;
+}
+
+.loading img {
+    height: auto;
+    max-width: 5vw;
+    animation: loading 1s infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

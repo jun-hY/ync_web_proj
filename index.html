@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    </body>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <div class="loading">
+                <div class="header">
+                    <h1 id="location">대구, TAE</h1>
+                </div>
+
+                <div class="current-weather">
+                    <div class="temperature">0°C</div>
+                    <div class="condition">
+                        <div class="icon">☀️</div>
+                        <div class="description">맑음</div>
+                    </div>
+                </div>
+
+                <div class="weather-details">
+                    <div class="detail">
+                        <i data-lucide="droplets"></i>
+                        <div class="label">습도</div>
+                        <div class="value humidity-value">0%</div>
+                    </div>
+                    <div class="detail">
+                        <i data-lucide="wind"></i>
+                        <div class="label">풍속</div>
+                        <div class="value wind-value">0 m/s</div>
+                    </div>
+                    <div class="detail">
+                        <i data-lucide="wind-direction"></i>
+                        <div class="label">풍향</div>
+                        <div class="value direction-value">NE</div>
+                    </div>
+                </div>
+
+                <div class="forecast">
+                    <div class="day" id="first-day">
+                        <div class="name">Mon</div>
+                        <div class="icon">☀️</div>
+                        <div class="temp">0°C</div>
+                    </div>
+                    <div class="day" id="second-day">
+                        <div class="name">Tue</div>
+                        <div class="icon">☀️</div>
+                        <div class="temp">0°C</div>
+                    </div>
+                    <div class="day" id="third-day">
+                        <div class="name">Wed</div>
+                        <div class="icon">☀️</div>
+                        <div class="temp">0°C</div>
+                    </div>
+                    <div class="day" id="fourth-day">
+                        <div class="name">Thu</div>
+                        <div class="icon">☀️</div>
+                        <div class="temp">0°C</div>
+                    </div>
+                    <div class="day" id="fifth-day">
+                        <div class="name">Fri</div>
+                        <div class="icon">☀️</div>
+                        <div class="temp">0°C</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/currentWeather.js"></script>
+    <script type="module" src="script/otherDayWeather.js"></script>
+</body>
+
+</html>
